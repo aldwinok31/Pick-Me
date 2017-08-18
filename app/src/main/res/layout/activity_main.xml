@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="aldwin.tablante.com.pickme.MainActivity">
+
+   <Button
+       android:id="@+id/buttonLoadPicture"
+       android:layout_width="0dp"
+       android:layout_height="340dp"
+       android:layout_gravity="center"
+       android:layout_marginBottom="80dp"
+       android:layout_marginEnd="59dp"
+       android:layout_marginLeft="59dp"
+       android:layout_marginRight="59dp"
+       android:layout_marginStart="59dp"
+       android:layout_weight="0"
+       android:alpha="0"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       tools:layout_constraintBottom_creator="1"
+       tools:layout_constraintLeft_creator="1"
+       tools:layout_constraintRight_creator="1">
+
+   </Button>
+
+
+   <ImageView
+       android:id="@+id/imgView"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:layout_marginTop="0dp"
+       android:scaleType="fitXY"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       tools:layout_constraintBottom_creator="1"
+       tools:layout_constraintLeft_creator="1"
+       tools:layout_constraintRight_creator="1"
+       tools:layout_constraintTop_creator="1">
+
+   </ImageView>
+
+   <ImageView
+       android:id="@+id/imagePic"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/imgView"
+       android:layout_centerHorizontal="true"
+       android:layout_marginLeft="92dp"
+       android:layout_marginStart="92dp"
+       android:layout_marginTop="146dp"
+       android:background="@drawable/pick_photo"
+       android:foregroundGravity="center"
+       android:scaleType="fitXY"
+       app:layout_constraintLeft_toLeftOf="@+id/imgView"
+       app:layout_constraintTop_toTopOf="@+id/imgView"
+       tools:layout_constraintLeft_creator="1"
+       tools:layout_constraintTop_creator="1" />
+
+   <Button
+       android:id="@+id/btnShare"
+       android:layout_width="0dp"
+       android:layout_height="48dp"
+       android:layout_marginEnd="70dp"
+       android:layout_marginLeft="70dp"
+       android:layout_marginRight="70dp"
+       android:layout_marginStart="70dp"
+       android:alpha="0.80"
+       android:background="@drawable/roundbutton"
+       android:text="SHARE"
+       android:visibility="invisible"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/buttonLoadPicture"
+       tools:layout_constraintLeft_creator="1"
+       tools:layout_constraintRight_creator="1"
+       tools:layout_constraintTop_creator="1" />
+
+
+</android.support.constraint.ConstraintLayout>
