@@ -22,15 +22,14 @@ public class MainActivity extends AppCompatActivity {
     private Button btnShare;
     private ImageView imagePic;
     private ImageView igPic;
-    //private Uri imageUri;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //btnCam = (Button) findViewById(R.id.btnCam);
-        // igPicCam = (ImageView) findViewById(R.id.igPicCam);
+
         btnShare = (Button) findViewById(R.id.btnShare);
         imagePic = (ImageView) findViewById(R.id.imagePic);
         Button buttonLoadImage = (Button) findViewById(R.id.buttonLoadPicture);
